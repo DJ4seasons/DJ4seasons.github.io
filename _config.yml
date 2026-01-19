@@ -28,9 +28,9 @@ author:
   avatar           : "profile.png"
   name             : "Daeho Jin"
   pronouns         : "he/him" # example: "she/her"  
-  bio              : "Atmospheric scientist interested in cloud, rain, and climate"
+  bio              : "Atmospheric scientist [Cloud, Rain, and Climate]"
   location         : "Maryland, USA"
-  employer         : "GESTAR II / UMBC / NASA GSFC"
+  employer         : "GESTAR II/UMBC/NASA GSFC"
   uri              : # URL
   email            : "DaehoJin@umbc.edu" 
 
@@ -53,7 +53,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/DJ4seasons"
+  github           : "DJ4seasons" #"https://github.com/DJ4seasons"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
