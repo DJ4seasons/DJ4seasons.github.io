@@ -1,7 +1,3 @@
-#header:
-#  image: "/images/Warm_Acid_Bath_byAnaRankin.jpg"
-![Header](./images/Warm_Acid_Bath_byAnaRankin.jpg)
-
 ---
 permalink: /
 title: "Gateway to the Daeho Jin's Works"
@@ -10,6 +6,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
+
+![Header](../images/Warm_Acid_Bath_byAnaRankin.jpg)
 
 Welcome! My name is Daeho Jin, working at UMBC / NASA GSFC under GESTAR II program. 
 
