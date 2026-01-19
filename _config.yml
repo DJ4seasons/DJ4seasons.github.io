@@ -11,8 +11,6 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "D JIN / Home Page"
 title_separator          : "-"
-header:
-  image: "/images/Warm_Acid_Bath_byAnaRankin.jpg"
 name                     : &name "Daeho Jin"
 description              : &description "Daeho's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://DJ4seasons.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
@@ -224,12 +222,12 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   teaching:
-    output: true
+    output: false #true
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -258,14 +256,14 @@ defaults:
       layout: single
       author_profile: true
   # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  #- scope:
+  #    path: ""
+  #    type: teaching
+  #  values:
+  #    layout: single
+  #    author_profile: true
+  #    share: true
+  #    comments: true
   # _publications
   - scope:
       path: ""
@@ -278,7 +276,7 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: true
