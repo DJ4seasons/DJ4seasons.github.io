@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Gateway to the Daeho Jin's Works"
+title: "I like to know the EARTH better!"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,9 @@ redirect_from:
 
 ![Header](../images/Warm_Acid_Bath_byAnaRankin.jpg)
 
-Welcome! My name is Daeho Jin, working at UMBC / NASA GSFC under GESTAR II program. 
+**Welcome! My name is Daeho Jin, an Atmospheric Scientist working at UMBC / NASA GSFC under GESTAR II program.**   
+
+(Still working on this homepage)
 
 A data-driven personal website
 ======
