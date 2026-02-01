@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "mint" #"default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "D JIN / Home1"
+title                    : "D_JIN Home"
 title_separator          : "-"
 name                     : &name "Daeho Jin"
 description              : &description "Daeho's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -23,7 +23,7 @@ repository               : "DJ4seasons/DJ4seasons.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/DJ_profile.jpg" #"profile.png"
+  avatar           : "DJ_profile.jpg" #"profile.png"
   name             : "Daeho Jin"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "Atmospheric scientist [Cloud, Rain, and Climate]"
