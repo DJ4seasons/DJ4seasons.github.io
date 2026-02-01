@@ -23,7 +23,7 @@ repository               : "DJ4seasons/DJ4seasons.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/DJ_profile.jpg" #"profile.png"
   name             : "Daeho Jin"
   pronouns         : "he/him" # example: "she/her"  
   bio              : "Atmospheric scientist [Cloud, Rain, and Climate]"
