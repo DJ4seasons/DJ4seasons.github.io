@@ -1,0 +1,15 @@
+<div class="publication-item">
+  <p>
+    <strong>
+      {% if post.paper_url %}
+        <a href="{{ post.paper_url }}" target="_blank">
+          {{ post.title }}
+        </a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </strong><br>
+    {{ post.citation }}
+  </p>
+</div>
+
