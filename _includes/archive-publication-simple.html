@@ -1,8 +1,8 @@
 <div class="publication-item">
   <p>
     <strong>
-      {% if post.paper_url %}
-        <a href="{{ post.paper_url }}" target="_blank">
+      {% if post.url %}
+        <a class="pub-title" href="{{ post.url | relative_url }}" target="_blank">
           {{ post.title }}
         </a>
       {% else %}
