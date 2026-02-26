@@ -41,3 +41,16 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* === Custom publication title styling === */
+
+.pub-title {
+  color: #1f4e79;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pub-title:hover {
+  color: #163a5c;
+  text-decoration: underline;
+}
