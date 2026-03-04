@@ -1,0 +1,44 @@
+---
+title: "1. MODIS Cloud Regime"
+excerpt: "Introduction to MODIS Cloud Regime<br/><img src='/images/500x300.png'>"
+collection: portfolio
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - MODIS Cloud Regimes</title>
+</head>
+<body>
+    <h2>Project 1 - MODIS Cloud Regimes</h2>
+
+    <h3>Cloud Data</h3>
+    <p>This project utilizes daytime cloud observations from NASA's Terra and Aqua MODIS instruments. We analyze 2D joint histograms of cloud-top pressure (CTP) and cloud optical thickness (COT), which provide a comprehensive view of cloud vertical structure and optical properties. These joint histograms capture the full spectrum of cloud types, from thin cirrus to deep convective clouds.</p>
+
+    <h3>Methodology</h3>
+    <p>We apply k-means clustering to identify recurring patterns in the CTP-COT joint histograms. The analysis employs k-means++ initialization to ensure robust centroid placement and uses the Davies-Bouldin criterion to determine the optimal number of cloud regimes. This unsupervised machine learning approach objectively classifies cloud populations into distinct regimes based on their physical characteristics.</p>
+
+    <h3>Training Configuration</h3>
+    <p><strong>Training Period:</strong> June 2014 - May 2019 (5 years)</p>
+    
+    <p><strong>Horizontal Domains:</strong></p>
+    <ul>
+        <li>Tropical domain: 15°S - 15°N</li>
+        <li>Extended tropical domain: 50°S - 50°N</li>
+    </ul>
+
+    <p>The five-year daily data from Terra and Aqua observations provides approximately 40 million samples for the tropical domain and 130 million samples for the extended tropical domain, offering sufficient data to capture the general variability of clouds. The dual-domain approach allows examination of both deep tropical convection and subtropical cloud systems.</p>
+
+    <h3>Cloud Regime Characteristics</h3>
+    <p><em>[Figures of regime centroids and relative frequency of occurrence (RFO) maps would be placed here]</em></p>
+
+    <h3>Extended Dataset</h3>
+    <p>Using the centroids derived from the training period, we extend the cloud regime classification both temporally and spatially. The temporal extension covers the full MODIS data record spanning <strong>September 2002 to December 2024</strong>, providing a 22+ year dataset that enables investigation of long-term trends, decadal variability, and regime responses to climate modes such as ENSO and MJO. The spatial domain was also extended by 10 degrees in both the north and south directions, expanding coverage to 25°S - 25°N for the tropical domain and 60°S - 60°N for the extended tropical domain.</p>
+
+    <p><strong>Data Availability:</strong> The complete cloud regime dataset is publicly available at <a href="https://zenodo.org/records/18356023" target="_blank">https://zenodo.org/records/18356023</a></p>
+
+    <p><strong>Reference:</strong> Jin et al. (2021), <em>Journal of Applied Meteorology and Climatology</em>, <a href="https://journals.ametsoc.org/view/journals/apme/60/6/JAMC-D-20-0253.1.xml" target="_blank">https://journals.ametsoc.org/view/journals/apme/60/6/JAMC-D-20-0253.1.xml</a></p>
+</body>
+</html>
