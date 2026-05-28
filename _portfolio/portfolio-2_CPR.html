@@ -48,10 +48,10 @@ collection: portfolio
     <!-- <h2>Project 1 - MODIS Cloud Regimes</h2> -->
 
     <h2>Cloud Data</h2>
-    <p>This project combines daytime cloud observations from NASA's Terra and Aqua MODIS instruments and corresponding precipitaiton from Integrated Multi-satellitE Retrievals for GPM (IMERG). On the cloud 2D joint histogram used in the previous “cloud regime” project, we add simultaneous observation of precipitation in the k-means clustering process. As a result, the full spectrum of cloud types as well as corresponding precipitation intensities are captures in a limited number of regimes.</p>
+    <p>This project combines daytime cloud observations from NASA's Terra and Aqua MODIS instruments and corresponding precipitaiton from Integrated Multi-satellitE Retrievals for GPM (IMERG). On the cloud 2D joint histogram used in the previous “cloud regime” project, we add simultaneous observation of precipitation before the k-means clustering process. As a result, the full spectrum of cloud types AND corresponding precipitation intensity distribution are captured in a limited number of regimes.</p>
 
     <h2>Methodology</h2>
-    <p>We apply k-means clustering to identify recurring patterns in the combined histograms of cloud (CTP-COT joint histograms) and precipitation. Utilizing the advantage of high spatial resolution of IMERG data (0.1-deg), first we collect simultaneous precipitation data using local passing time Terra and Aqua, and resulting 100 values in 1-deg (MODIS standard level-3 resolution) are transformed into 6-bin histogram based on precipitation rates. The concatenated histograms of cloud and precipitation are used for the k-means clustering process in the same way as described in the Project1-CR. We note that there are two versions of hybrid regimes depending on the weight of precipitation histogram: 1. natural sum of cloud (42-bin) and precipitation (6-bin) histograms resulting in total 48-bin histogram (referred to as “Pr6x1”), and 2. same weight between cloud and precipitation by duplicating precipitation histograms 7-times, resulting in total 84-bin histogram (referred to as “Pr6x7”).</p>
+    <p>We apply k-means clustering to identify recurring patterns in the combined histograms of cloud (CTP-COT joint histograms) and precipitation. Utilizing the advantage of high spatial resolution of IMERG data (0.1-deg), first we collect simultaneous precipitation data using local passing time Terra and Aqua, and resulting 100 values in 1-deg (MODIS standard level-3 resolution) are transformed into 6-bin histograms based on precipitation rates. The concatenated histograms of cloud and precipitation are used for the k-means clustering process in the same way as described in the Project1-CR. We note that there are two versions of hybrid regimes depending on the weight of precipitation histogram: 1. natural addition of cloud (42-bin) and precipitation (6-bin) histograms resulting in total 48-bin histogram (referred to as “Pr6x1”), and 2. same weight between cloud and precipitation by duplicating precipitation histograms 7 times, resulting in total 84-bin histogram (referred to as “Pr6x7”).</p>
 
     <h2>Training Configuration</h2>
     <p><strong>Training Period:</strong> June 2014 - May 2019 (5 years)</p>
@@ -69,7 +69,7 @@ collection: portfolio
         <div class="regime-title">Tropical Domain (15°S - 15°N)</div>
         <div class="figure-row">
             <div class="figure-item">
-                <img src="/images/Project2_CPR/Fig.MODIS_t+a_cld+pr6x1_hist_15S-15N.k16x48.IMGv07B_iter.png" alt="Tropical cloud regime centroids (Pr6x1)">
+                <img src="/images/Project2_CPR/Centroid.MODIS_t+a_cld+pr6x1_hist_15S-15N.k16x48.IMGv07B_iter.png" alt="Tropical cloud regime centroids (Pr6x1)">
                 <div class="figure-caption">Cloud regime centroids for Pr6x1 in tropical domain</div>
             </div>
             <div class="figure-item">
@@ -77,7 +77,7 @@ collection: portfolio
                 <div class="figure-caption">Relative frequency of occurrence (RFO) maps for Pr6x1 in tropical domain (2014.06-2019.05)</div>
             </div>
             <div class="figure-item">
-                <img src="/images/Project2_CPR/Fig.MODIS_t+a_cld+pr6x7_hist_15S-15N.k19x48.IMGv07B_iter.png" alt="Tropical cloud regime centroids (Pr6x7)">
+                <img src="/images/Project2_CPR/Centroid.MODIS_t+a_cld+pr6x7_hist_15S-15N.k19x48.IMGv07B_iter.png" alt="Tropical cloud regime centroids (Pr6x7)">
                 <div class="figure-caption">Cloud regime centroids for Pr6x7 in tropical domain</div>
             </div>
             <div class="figure-item">
@@ -89,17 +89,20 @@ collection: portfolio
         <div class="regime-title">Semi-Global Domain (50°S - 50°N)</div>
         <div class="figure-row">
             <div class="figure-item">
-                <img src="/images/Project2_CPR/Fig.MODIS_t+a_cld+pr6x1_hist_50S-50N.k20x48.IMGv07B_iter.png" alt="Semi-global cloud regime centroids (Pr6x1)">
+                <img src="/images/Project2_CPR/Centroid.MODIS_t+a_cld+pr6x1_hist_50S-50N.k20x48.IMGv07B_iter.png" alt="Semi-global cloud regime centroids (Pr6x1)">
                 <div class="figure-caption">Cloud regime centroids for Pr6x1 in semi-global domain</div>
             </div>
+            
             <div class="figure-item">                
                 <img src="/images/Project2_CPR/Fig.RFO_Centroid.MODIS_t+a_cld+pr6x1_hist_50S-50N.k20x48.IMGv07B_iter.1.png" alt="Semi-global cloud regime RFO maps (Pr6x1)">
                 <div class="figure-caption">Relative frequency of occurrence (RFO) maps for Pr6x1 in semi-global domain (2014.06-2019.05)</div>
             </div>
+            
             <div class="figure-item">
-                <img src="/images/Project2_CPR/Fig.MODIS_t+a_cld+pr6x7_hist_50S-50N.k22x48.IMGv07B_iter.png" alt="Semi-global cloud regime centroids (Pr6x7)">
+                <img src="/images/Project2_CPR/Centroid.MODIS_t+a_cld+pr6x7_hist_50S-50N.k22x48.IMGv07B_iter.png" alt="Semi-global cloud regime centroids (Pr6x7)">
                 <div class="figure-caption">Cloud regime centroids for Pr6x7 in semi-global domain</div>
             </div>
+            
             <div class="figure-item">
                 <img src="/images/Project2_CPR/Fig.RFO_Centroid.MODIS_t+a_cld+pr6x7_hist_50S-50N.k22x48.IMGv07B_iter.1.png" alt="Semi-global cloud regime RFO maps (Pr6x7)">
                 <div class="figure-caption">Relative frequency of occurrence (RFO) maps for Pr6x7 in semi-global domain (2014.06-2019.05)</div>
@@ -119,6 +122,7 @@ collection: portfolio
             <img src="/images/Project2_CPR/Consistency.Prec-only_to_CPR.Centroid.MODIS_t+a_cld+pr6x7_hist_15S-15N.k19x48.IMGv07B_iter.png" alt="Projection accuracy of Pr6x7 set - Tropical domain">
             <div class="figure-caption">The accuracy of CPR identification by precipitation-only data for Pr6x7 set in tropical domain (2014.06-2019.05)</div>
         </div>
+        
         <div class="single-figure">
             <img src="/images/Project2_CPR/Consistency.Prec-only_to_CPR.Centroid.MODIS_t+a_cld+pr6x7_hist_50S-50N.k22x48.IMGv07B_iter.png" alt="Projection accuracy of Pr6x7 set - Semi-global domain">
             <div class="figure-caption">The accuracy of CPR identification by precipitation-only data for Pr6x7 set in semi-global domain (2014.06-2019.05)</div>
